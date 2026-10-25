@@ -71,7 +71,7 @@ If a file there is ever missing, the page falls back to the online CDN automatic
 ## Keyboard shortcuts and terminal
 
 - `1`–`8` jump to each section, `?` shows the shortcuts list.
-- `~` (or the TERMINAL button in the footer) opens the terminal. Try `help`, `hack`, `matrix`, `resume`, `sound on`.
+- `~` (or the TERMINAL button in the footer) opens the terminal. Try `help`, `hack`, `matrix`, `resume`.
 
 ## Link preview image
 
@@ -80,9 +80,8 @@ After changing it, paste the site link into https://www.linkedin.com/post-inspec
 
 ## Interface sounds
 
-Soft interface sounds are **always on**. Browsers only allow a page to make sound after the visitor's
-first click, tap or key press (hovering and scrolling don't count), so the sounds start from that first
-interaction, and hover sounds work after it. The sounds are generated in the browser, so there are no audio files. To change how they sound, edit the `SOUNDS` list near the top of `js/main.js`.
+Interface sounds are **switched off** so the site stays quiet. The sound code is still in `js/main.js`:
+to bring it back, change `on = false;` to `on = true;` near the top of the file.
 
 ## Contact form
 

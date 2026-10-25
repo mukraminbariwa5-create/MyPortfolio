@@ -16,11 +16,9 @@
     var ctx = null, out = null, echo = null, on = false, last = {}, armed = false;
     // browsers only allow sound after the visitor's first click, tap or key press (hover and scroll don't count),
     // so the audio engine starts on that first interaction and every sound after it plays, hover included
-    on = true;
-    var arm = function () {
-      armed = true;
-      if (init() && ctx.state === 'suspended') ctx.resume();
-    };
+    // sounds are switched off site-wide (a calm, quiet site); set this to true to bring them back
+    on = false;
+    var arm = function () { armed = true; };
     ['pointerdown', 'keydown', 'touchend'].forEach(function (t) { window.addEventListener(t, arm, { capture: true, passive: true }); });
     function init() {
       if (ctx) return true;
@@ -530,13 +528,11 @@
   var CMDS = {
     help: function () {
       tprint('commands: <b>about</b> · <b>projects</b> · <b>skills</b> · <b>certs</b> · <b>now</b> · <b>contact</b> · <b>cv</b> · <b>resume</b> · <b>clear</b> · <b>exit</b>');
-      tprint('extras: <b>matrix</b> · <b>hack</b> · <b>sound on</b> / <b>sound off</b> · <b>shortcuts</b> · <b>goto &lt;section&gt;</b>');
+      tprint('extras: <b>matrix</b> · <b>hack</b> · <b>shortcuts</b> · <b>goto &lt;section&gt;</b>');
     },
     resume: function () { CMDS.cv(); },
     matrix: function () { tprint('entering the matrix…', 'term__ok'); setTimeout(function () { closeTerm(); matrixRain(); }, 350); },
     hack: function () { runHack(); },
-    'sound on': function () { SFX.set(true); tprint('interface sounds: on', 'term__ok'); },
-    'sound off': function () { SFX.set(false); tprint('interface sounds: off'); },
     shortcuts: function () { closeTerm(); openKeys(); },
     certs: function () { CE.forEach(function (c) { tprint('<b>' + esc(c.title) + '</b> — ' + esc(c.issuer) + ', ' + esc(c.date)); }); },
     about: function () { tprint('Mukramin B. Ansao — web &amp; app developer, Pasig City. BSIT Cum Laude 2026, Major in Networking.'); },
