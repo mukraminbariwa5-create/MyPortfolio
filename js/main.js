@@ -238,7 +238,7 @@
   var previewHtml = function (p) {
     if (!p.preview) return '';
     return '<video class="preview" data-preview data-src="' + esc(p.preview) + '" muted loop playsinline disablepictureinpicture preload="none" aria-hidden="true" tabindex="-1"></video>' +
-      '<button type="button" class="preview__badge" data-preview-btn aria-label="Play live preview of ' + esc(p.name) + '" hidden><i></i>LIVE PREVIEW</button>';
+      '<button type="button" class="preview__badge" data-preview-btn aria-label="Play live preview of ' + esc(p.name) + '" hidden><i></i><span class="preview__txt">LIVE PREVIEW</span></button>';
   };
 
   // Projects
