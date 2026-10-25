@@ -83,6 +83,7 @@ window.PORTFOLIO = {
       ],
       tags: ['Laravel', 'React Native', 'Expo', 'MySQL', 'TypeScript'],
       github: 'https://github.com/mukraminbariwa5-create/TeachWise',
+      live: 'https://teachwise-demo.onrender.com', liveNote: 'One-click demo accounts on the sign-in screen. Free hosting: the first visit can take about a minute to wake up.',
       preview: 'assets/video/teachwise.mp4',
       learned: 'Building one app for many schools taught me multi-tenant design: every record carries a school ID and is filtered on every request, so one school can never see another\'s data. It also pushed me from PHP pages to a REST API with a React Native app on Android and the web from a single codebase.',
       shots: [
