@@ -33,7 +33,7 @@ window.PORTFOLIO = {
     'Building new web and app projects with Laravel, React Native and Claude Code',
     'Adding live demos to my projects',
     'Practicing SOC investigations and CTF challenges',
-    'Applying for junior and trainee developer roles'
+    'Applying for web and app developer roles'
   ],
 
   /* ---------- What I Do ---------- */
@@ -194,16 +194,16 @@ window.PORTFOLIO = {
   ],
   journey: [
     { when: 'Now', kind: 'Projects', title: 'Building projects with AI-driven development', org: 'Personal projects · ongoing', text: 'Four complete projects so far: TeachWise, Servease, BookTrack and Padala, each one planned, built with Claude Code, tested and published on GitHub.', live: true },
-    { when: '2026', kind: 'OJT', title: 'On-the-Job Trainee', org: 'Department of Information and Communications Technology (DICT)', text: 'Hands-on work across deployment, networking and development:',
+    { when: 'Feb – May 2026', kind: 'OJT', title: 'On-the-Job Trainee', org: 'Department of Information and Communications Technology (DICT)', text: 'Hands-on work across deployment, networking and development:',
       bullets: [
-        'Helped distribute and deploy free Wi-Fi SIM cards (25 GB monthly data) to schools, and oriented students and staff on site',
-        'Assisted with basic networking tasks during field deployments',
+        'Facilitated the rollout of a DICT free internet connectivity program to partner schools, coordinating on-site deployment and orienting students and staff',
+        'Assisted with networking tasks during field deployments',
         'Assisted senior developers with their website development work',
         'Completed gamified, self-paced coding training on Walnut Education',
         'Trained in Capture the Flag (CTF) cybersecurity challenges'
       ] },
-    { when: '2026', kind: 'Personal project', title: 'TeachWise', org: 'Personal project · independent developer', text: 'Anonymous teacher-evaluation system for schools, later rebuilt into a multi-school Android and web app (see Projects).' },
-    { when: '2026', kind: 'Capstone', title: 'Library System Capstone → BookTrack', org: 'Mindanao State University – Sulu', text: 'Built solo in one month (LibraSys): MySQL database, inventory, borrowing and returns with due dates, and reports. Later rebuilt into BookTrack.' },
+    { when: 'Dec 2025', kind: 'Capstone', title: 'Library System Capstone → BookTrack', org: 'Mindanao State University – Sulu', text: 'Built solo in one month (LibraSys): MySQL database, inventory, borrowing and returns with due dates, and reports. Later rebuilt into BookTrack.' },
+    { when: 'May 2025', kind: 'Personal project', title: 'TeachWise', org: 'Personal project · independent developer', text: 'Anonymous teacher-evaluation system for schools, later rebuilt into a multi-school Android and web app (see Projects).' },
     { when: 'Ongoing', kind: 'Cybersecurity', title: 'SOC Labs & Capture the King CTF', org: 'TryHackMe · LetsDefend · SecurityBlue.team', text: 'Splunk log analysis, phishing and brute-force investigations, incident reports, and team CTF competition.' }
   ]
 };
