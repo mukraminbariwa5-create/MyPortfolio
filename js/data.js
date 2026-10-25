@@ -64,6 +64,8 @@ window.PORTFOLIO = {
   /* ---------- Projects ----------
      layout: 'desktop' = browser-style gallery, 'app' = three phone/app windows.
      github: '' shows "Repo coming soon".
+     live: the live demo address (shows a "Live demo" button); liveNote: one short line under it,
+     e.g. demo sign-in details or "first visit may take a minute to wake up".
      preview: a short silent clip (6–10 s, .mp4) that plays inside the screenshot
      frame on hover (desktop) or when scrolled into view (phones). If the file is
      not in assets/video/ yet, nothing shows, so it is safe to leave set.

@@ -296,7 +296,8 @@ main{margin-left:var(--rail)}
 .feats li,.tl__bullets li{display:flex;gap:12px;align-items:flex-start;font-size:13.5px;line-height:1.6;color:var(--ink-2)}
 .feats li::before,.tl__bullets li::before{content:"";flex:0 0 auto;margin-top:8px;width:6px;height:6px}
 .project__tags{display:flex;flex-wrap:wrap;gap:6px}
-.project__actions{display:flex;gap:12px;margin-top:6px}
+.project__actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:6px}
+.project__note{flex-basis:100%;font-size:.8rem;color:var(--muted,#9aa3b2)}
 .soon{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border:1px dashed var(--b-field);border-radius:4px;color:var(--dim);font-family:var(--hud);font-weight:600;font-size:11px;letter-spacing:.18em}
 .apps{position:relative;display:flex;gap:26px;justify-content:center;padding-top:10px}
 .apps::before{content:"";position:absolute;left:50%;top:40%;width:110%;height:80%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse,rgba(98,240,140,.1) 0%,transparent 70%)}

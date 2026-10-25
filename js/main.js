@@ -258,9 +258,14 @@
           return '<button type="button" class="thumb' + (j === 0 ? ' is-on' : '') + '" data-shot="' + j + '" role="tab" aria-selected="' + (j === 0) + '" aria-label="Show ' + esc(s.label) + '"><img src="' + esc(s.src) + '" alt="" loading="lazy"></button>';
         }).join('') + '</div>';
     }
-    var action = p.github
-      ? '<a class="btn btn--solid" href="' + esc(p.github) + '" target="_blank" rel="noopener" data-magnetic>' + GH + ' VIEW CODE</a>'
-      : '<span class="soon">REPO COMING SOON</span>';
+    // With a live demo, "Live demo" is the main button and the code link sits beside it.
+    var live = p.live
+      ? '<a class="btn btn--solid" href="' + esc(p.live) + '" target="_blank" rel="noopener" data-magnetic>LIVE DEMO <span class="btn__ico"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>'
+      : '';
+    var action = live + (p.github
+      ? '<a class="btn ' + (p.live ? 'btn--ghost' : 'btn--solid') + '" href="' + esc(p.github) + '" target="_blank" rel="noopener" data-magnetic>' + GH + ' VIEW CODE</a>'
+      : '<span class="soon">REPO COMING SOON</span>');
+    if (p.live && p.liveNote) action += '<span class="project__note">' + esc(p.liveNote) + '</span>';
     return '<article class="project' + (p.layout === 'app' ? ' project--app' : '') + (p.featured ? ' project--featured' : '') + '" data-project>' +
       '<div class="project__media">' + media + '</div>' +
       '<div class="project__body">' +
