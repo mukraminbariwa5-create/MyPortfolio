@@ -540,7 +540,7 @@
     skills: function () { (D.toolkitGroups || []).forEach(function (g) { tprint('<b>' + esc(g.name) + '</b>  ' + esc((g.items || []).concat(g.familiar || []).join(' · '))); }); },
     now: function () { (D.now || []).forEach(function (n) { tprint('› ' + esc(n)); }); },
     contact: function () { tprint('email    ' + esc(C.email)); tprint('linkedin ' + esc(C.linkedin)); tprint('github   ' + esc(C.github)); },
-    cv: function () { tprint('opening CV…'); window.open('assets/Mukramin_Ansao_CV.pdf?v=2026-10-26', '_blank'); },
+    cv: function () { tprint('opening CV…'); window.open('assets/Mukramin_Ansao_CV.pdf?v=2026-10-26b', '_blank'); },
     clear: function () { termOut.innerHTML = ''; },
     exit: function () { closeTerm(); },
     whoami: function () { tprint('a recruiter with good taste, probably.'); },

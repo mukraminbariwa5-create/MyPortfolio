@@ -91,7 +91,7 @@ window.PORTFOLIO = {
       ]
     },
     {
-      name: 'Servease', kind: 'Web system · 3 user roles', layout: 'desktop', path: 'servease',
+      name: 'Servease', kind: 'Web system · 3 user roles', layout: 'desktop', path: 'servease', status: 'In development',
       facts: [['3', 'user roles'], ['3', 'dashboards']],
       desc: 'A home-services marketplace that connects customers with ID-verified local pros for plumbing, aircon, cleaning and more.',
       features: [
@@ -188,12 +188,12 @@ window.PORTFOLIO = {
 
   /* ---------- Why work with me: each point links to its proof ---------- */
   why: [
-    { title: 'I ship complete systems', text: 'Four projects built end to end: the database, the API, the admin dashboards and the screens people use. TeachWise alone has 5 user roles, 72 API tests and runs on Android and the web.', link: '#projects', linkText: 'See the projects' },
+    { title: 'I ship complete systems', text: 'Four projects covering the full stack: the database, the API, the admin dashboards and the screens people use. TeachWise alone has 5 user roles, 72 API tests and runs on Android and the web.', link: '#projects', linkText: 'See the projects' },
     { title: 'Security is built in, not added later', text: 'A networking major and three security certificates shape how I code: school-by-school data separation in TeachWise, role checks in every system and on-device encryption in Padala.', link: '#certifications', linkText: 'See the certificates' },
     { title: 'I build with AI and own the result', text: 'I use AI coding tools like Claude Code to move fast, but I plan each system, review and test every change, and can explain how it works. 116 automated tests across TeachWise and Padala back that up.', link: 'https://github.com/mukraminbariwa5-create', linkText: 'See my GitHub' }
   ],
   journey: [
-    { when: 'Now', kind: 'Projects', title: 'Building projects with AI-driven development', org: 'Personal projects · ongoing', text: 'Four complete projects so far: TeachWise, Servease, BookTrack and Padala, each one planned, built with Claude Code, tested and published on GitHub.', live: true },
+    { when: 'Now', kind: 'Projects', title: 'Building projects with AI-driven development', org: 'Personal projects · ongoing', text: 'Four projects so far: TeachWise and BookTrack are complete, and Servease and Padala are in development, each one planned, built with Claude Code, tested and published on GitHub.', live: true },
     { when: 'Feb – May 2026', kind: 'OJT', title: 'On-the-Job Trainee', org: 'Department of Information and Communications Technology (DICT)', text: 'Hands-on work across deployment, networking and development:',
       bullets: [
         'Facilitated the rollout of a DICT free internet connectivity program to partner schools, coordinating on-site deployment and orienting students and staff',
