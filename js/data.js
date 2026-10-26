@@ -31,7 +31,6 @@ window.PORTFOLIO = {
   now: [
     'Preparing TeachWise for release on Google Play',
     'Building new web and app projects with Laravel, React Native and Claude Code',
-    'Adding live demos to my projects',
     'Practicing SOC investigations and CTF challenges',
     'Applying for web and app developer roles'
   ],
@@ -125,6 +124,7 @@ window.PORTFOLIO = {
       ],
       tags: ['PHP', 'MySQL', 'JavaScript', 'XAMPP'],
       github: 'https://github.com/mukraminbariwa5-create/Booktrack',
+      live: 'https://booktrack-demo.onrender.com', liveNote: 'One-click librarian and member demo accounts. Free hosting: the first visit can take about a minute to wake up.',
       preview: 'assets/video/booktrack.mp4',
       learned: 'Rebuilding my own capstone taught me to refactor older code, plan a cleaner relational database, and design for two very different users: members and librarians.',
       shots: [
@@ -146,6 +146,7 @@ window.PORTFOLIO = {
       ],
       tags: ['Node.js', 'JavaScript', 'Encryption', 'Installable app'],
       github: 'https://github.com/mukraminbariwa5-create/Padala',
+      live: 'https://padala-demo.onrender.com', liveNote: 'Create a test account with any username. Demo data is erased whenever it restarts; the first visit can take about a minute to wake up.',
       preview: 'assets/video/padala.mp4', previewShot: 1,
       learned: 'Encrypting files on the device before upload, and sending only the files that changed, which taught me how sync tools save bandwidth on slow connections.',
       shots: [
