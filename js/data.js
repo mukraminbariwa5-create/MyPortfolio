@@ -104,6 +104,7 @@ window.PORTFOLIO = {
       ],
       tags: ['PHP', 'MySQL', 'JavaScript', 'Responsive'],
       github: 'https://github.com/mukraminbariwa5-create/Servease',
+      live: 'https://servease-demo.onrender.com', liveNote: 'One-click Customer, Pro and Admin demo accounts. Free hosting: the first visit can take about a minute to wake up.',
       preview: 'assets/video/servease.mp4',
       learned: 'Designing role-based access so customers, pros and admins each see only their own data and actions, and keeping three different dashboards consistent in one system.',
       shots: [
