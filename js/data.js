@@ -93,7 +93,7 @@ window.PORTFOLIO = {
       ]
     },
     {
-      name: 'KATRIBO', kind: 'Website · React · coffee shop', layout: 'desktop', path: 'katribo', status: 'Launching soon',
+      name: 'KATRIBO', kind: 'Website · React · coffee shop', layout: 'desktop', path: 'katribo',
       facts: [['8', 'pages'], ['23', 'menu items'], ['1', 'server-side price check']],
       desc: 'A premium all-black website for KATRIBO Slow Coffee Bar, a café by the bay in Patikul, Sulu, built from my own UI design and the café\'s real photos. Visitors browse the menu, customise a drink and check out, and on phones it works like an app.',
       features: [
@@ -102,8 +102,9 @@ window.PORTFOLIO = {
         'Every price is recalculated on the server, so the browser can\'t change what an order costs',
         'App-style phone layout with a bottom tab bar, gallery with a lightbox, and fast page transitions'
       ],
-      tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Netlify'],
-      github: '',
+      tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Node.js'],
+      github: 'https://github.com/mukraminbariwa5-create/Katribo',
+      live: 'https://katribo-demo.onrender.com', liveNote: 'Checkout is a demo: orders are checked on the server but never charged or sent. Free hosting: the first visit can take about a minute to wake up.',
       preview: 'assets/video/katribo.mp4',
       learned: 'Rebuilding my first PHP version in React and TypeScript taught me to split a site into reusable components, keep the menu in one data file that drives every page, and never trust prices sent from the browser.',
       shots: [
@@ -219,7 +220,7 @@ window.PORTFOLIO = {
     { title: 'I build with AI and own the result', text: 'I use AI coding tools like Claude Code to move fast, but I plan each system, review and test every change, and can explain how it works. 116 automated tests across TeachWise and Padala back that up.', link: 'https://github.com/mukraminbariwa5-create', linkText: 'See my GitHub' }
   ],
   journey: [
-    { when: 'Now', kind: 'Projects', title: 'Building projects with AI-driven development', org: 'Personal projects · ongoing', text: 'Five projects so far: TeachWise and BookTrack are complete, KATRIBO is about to launch, and Servease and Padala are in development, each one planned, built with Claude Code, tested and published on GitHub.', live: true },
+    { when: 'Now', kind: 'Projects', title: 'Building projects with AI-driven development', org: 'Personal projects · ongoing', text: 'Five projects so far: TeachWise, KATRIBO and BookTrack are complete, and Servease and Padala are in development, each one planned, built with Claude Code, tested and published on GitHub.', live: true },
     { when: 'Feb – May 2026', kind: 'OJT', title: 'On-the-Job Trainee', org: 'Department of Information and Communications Technology (DICT) · Jolo, Sulu', text: 'Hands-on work across deployment, networking and development:',
       bullets: [
         'Facilitated the rollout of a DICT free internet connectivity program to partner schools, coordinating on-site deployment and orienting students and staff',
