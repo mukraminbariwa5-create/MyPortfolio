@@ -21,7 +21,7 @@ window.PORTFOLIO = {
 
   /* ---------- Hero stat bar ---------- */
   stats: {
-    projects: 4
+    projects: 5
   },
 
   /* Shown in the footer as "Last updated". Change it whenever you update the site. */
@@ -37,7 +37,7 @@ window.PORTFOLIO = {
 
   /* ---------- What I Do ---------- */
   skills: [
-    { icon: 'front', title: 'Front-End & Mobile', text: 'Responsive interfaces that look right on phones and desktops, plus Android and web apps from one React Native codebase.', tags: ['HTML', 'CSS', 'JavaScript', 'React Native'] },
+    { icon: 'front', title: 'Front-End & Mobile', text: 'Responsive interfaces that look right on phones and desktops, plus Android and web apps from one React Native codebase.', tags: ['HTML', 'CSS', 'React', 'React Native'] },
     { icon: 'back', title: 'Back-End & Databases', text: 'Server logic, user logins and data handling — built security-minded, backed by my networking and cybersecurity training.', tags: ['PHP', 'Laravel', 'MySQL', 'Node.js'] },
     { icon: 'system', title: 'Full Systems', text: 'Admin panels, dashboards and multi-user systems with real roles and data, like TeachWise, BookTrack and Servease.', tags: ['Laravel', 'PHP', 'MySQL', 'REST APIs'] },
     { icon: 'ai', title: 'AI-Driven Development', text: 'I build with AI coding tools like Claude Code. I plan the system and its data, direct the AI, then review, test and fix every change before it ships.', tags: ['Claude Code', 'Code review', 'Automated tests'] }
@@ -52,13 +52,13 @@ window.PORTFOLIO = {
   /* Toolkit shown in the Skills section, grouped. */
   /* items = used in my own projects (solid chips); familiar = know the basics / from training (outlined chips) */
   toolkitGroups: [
-    { name: 'Front-end & mobile', items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React Native', 'Expo', 'Chart.js'], familiar: ['Tailwind CSS', 'Bootstrap', 'jQuery', 'GSAP'] },
+    { name: 'Front-end & mobile', items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'React Native', 'Expo', 'Tailwind CSS', 'Vite', 'Chart.js'], familiar: ['Bootstrap', 'jQuery', 'GSAP'] },
     { name: 'Back-end & data', items: ['PHP', 'Laravel', 'MySQL', 'Node.js', 'REST APIs'], familiar: ['phpMyAdmin'] },
-    { name: 'AI tools & workflow', items: ['Claude Code', 'Claude', 'Git', 'GitHub', 'VS Code', 'XAMPP'], familiar: ['Postman', 'Figma'] },
+    { name: 'AI tools & workflow', items: ['Claude Code', 'Claude', 'Git', 'GitHub', 'VS Code', 'XAMPP', 'Netlify'], familiar: ['Postman', 'Figma'] },
     { name: 'Security (training & labs)', items: [], familiar: ['Linux', 'Wireshark', 'Nmap', 'Splunk', 'Kali Linux', 'Burp Suite', 'Metasploit'] }
   ],
 
-  toolkit: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React Native', 'jQuery', 'Bootstrap', 'Tailwind CSS', 'PHP', 'Laravel', 'MySQL', 'Node.js', 'XAMPP', 'Chart.js', 'GSAP', 'Git', 'GitHub', 'Postman', 'Figma', 'Claude Code', 'Linux', 'Wireshark', 'Nmap', 'Splunk', 'Burp Suite', 'Metasploit'],
+  toolkit: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'React Native', 'Vite', 'jQuery', 'Bootstrap', 'Tailwind CSS', 'PHP', 'Laravel', 'MySQL', 'Node.js', 'XAMPP', 'Chart.js', 'GSAP', 'Git', 'GitHub', 'Postman', 'Figma', 'Netlify', 'Claude Code', 'Linux', 'Wireshark', 'Nmap', 'Splunk', 'Burp Suite', 'Metasploit'],
 
   /* ---------- Projects ----------
      layout: 'desktop' = browser-style gallery, 'app' = three phone/app windows.
@@ -90,6 +90,27 @@ window.PORTFOLIO = {
         { src: 'assets/img/tw_teacher.webp', label: 'Teacher dashboard' },
         { src: 'assets/img/tw_admin.webp', label: 'Admin dashboard' },
         { src: 'assets/img/tw_mobile.webp', label: 'Professor Wise on a phone', tall: true }
+      ]
+    },
+    {
+      name: 'KATRIBO', kind: 'Website · React · coffee shop', layout: 'desktop', path: 'katribo', status: 'Launching soon',
+      facts: [['8', 'pages'], ['23', 'menu items'], ['1', 'server-side price check']],
+      desc: 'A premium all-black website for KATRIBO Slow Coffee Bar, a café by the bay in Patikul, Sulu, built from my own UI design and the café\'s real photos. Visitors browse the menu, customise a drink and check out, and on phones it works like an app.',
+      features: [
+        'Menu with category filters and search, plus drink pages with sizes and add-ons',
+        'Cart that stays after a refresh, and a checkout that validates every field',
+        'Every price is recalculated on the server, so the browser can\'t change what an order costs',
+        'App-style phone layout with a bottom tab bar, gallery with a lightbox, and fast page transitions'
+      ],
+      tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Netlify'],
+      github: '',
+      preview: 'assets/video/katribo.mp4',
+      learned: 'Rebuilding my first PHP version in React and TypeScript taught me to split a site into reusable components, keep the menu in one data file that drives every page, and never trust prices sent from the browser.',
+      shots: [
+        { src: 'assets/img/kt_home.webp', label: 'Home' },
+        { src: 'assets/img/kt_menu.webp', label: 'Menu' },
+        { src: 'assets/img/kt_drink.webp', label: 'Drink details' },
+        { src: 'assets/img/kt_mobile.webp', label: 'Phone view', tall: true }
       ]
     },
     {
@@ -193,12 +214,12 @@ window.PORTFOLIO = {
 
   /* ---------- Why work with me: each point links to its proof ---------- */
   why: [
-    { title: 'I ship complete systems', text: 'Four projects covering the full stack: the database, the API, the admin dashboards and the screens people use. TeachWise alone has 5 user roles, 72 API tests and runs on Android and the web.', link: '#projects', linkText: 'See the projects' },
+    { title: 'I ship complete systems', text: 'Five projects covering the full stack: the database, the API, the admin dashboards and the screens people use. TeachWise alone has 5 user roles, 72 API tests and runs on Android and the web.', link: '#projects', linkText: 'See the projects' },
     { title: 'Security is built in, not added later', text: 'A networking major and three security certificates shape how I code: school-by-school data separation in TeachWise, role checks in every system and on-device encryption in Padala.', link: '#certifications', linkText: 'See the certificates' },
     { title: 'I build with AI and own the result', text: 'I use AI coding tools like Claude Code to move fast, but I plan each system, review and test every change, and can explain how it works. 116 automated tests across TeachWise and Padala back that up.', link: 'https://github.com/mukraminbariwa5-create', linkText: 'See my GitHub' }
   ],
   journey: [
-    { when: 'Now', kind: 'Projects', title: 'Building projects with AI-driven development', org: 'Personal projects · ongoing', text: 'Four projects so far: TeachWise and BookTrack are complete, and Servease and Padala are in development, each one planned, built with Claude Code, tested and published on GitHub.', live: true },
+    { when: 'Now', kind: 'Projects', title: 'Building projects with AI-driven development', org: 'Personal projects · ongoing', text: 'Five projects so far: TeachWise and BookTrack are complete, KATRIBO is about to launch, and Servease and Padala are in development, each one planned, built with Claude Code, tested and published on GitHub.', live: true },
     { when: 'Feb – May 2026', kind: 'OJT', title: 'On-the-Job Trainee', org: 'Department of Information and Communications Technology (DICT) · Jolo, Sulu', text: 'Hands-on work across deployment, networking and development:',
       bullets: [
         'Facilitated the rollout of a DICT free internet connectivity program to partner schools, coordinating on-site deployment and orienting students and staff',
