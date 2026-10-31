@@ -21,11 +21,11 @@ window.PORTFOLIO = {
 
   /* ---------- Hero stat bar ---------- */
   stats: {
-    projects: 5
+    projects: 6
   },
 
   /* Shown in the footer as "Last updated". Change it whenever you update the site. */
-  updated: 'October 2026',
+  updated: 'November 2026',
 
   /* ---------- Now: what I'm working on (About section + terminal) ---------- */
   now: [
@@ -53,12 +53,12 @@ window.PORTFOLIO = {
   /* items = used in my own projects (solid chips); familiar = know the basics / from training (outlined chips) */
   toolkitGroups: [
     { name: 'Front-end & mobile', items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'React Native', 'Expo', 'Tailwind CSS', 'Vite', 'Chart.js'], familiar: ['Bootstrap', 'jQuery', 'GSAP'] },
-    { name: 'Back-end & data', items: ['PHP', 'Laravel', 'MySQL', 'Node.js', 'REST APIs'], familiar: ['phpMyAdmin'] },
+    { name: 'Back-end & data', items: ['PHP', 'Laravel', 'MySQL', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'REST APIs'], familiar: ['phpMyAdmin'] },
     { name: 'AI tools & workflow', items: ['Claude Code', 'Claude', 'Git', 'GitHub', 'VS Code', 'XAMPP', 'Netlify'], familiar: ['Postman', 'Figma'] },
     { name: 'Security (training & labs)', items: [], familiar: ['Linux', 'Wireshark', 'Nmap', 'Splunk', 'Kali Linux', 'Burp Suite', 'Metasploit'] }
   ],
 
-  toolkit: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'React Native', 'Vite', 'jQuery', 'Bootstrap', 'Tailwind CSS', 'PHP', 'Laravel', 'MySQL', 'Node.js', 'XAMPP', 'Chart.js', 'GSAP', 'Git', 'GitHub', 'Postman', 'Figma', 'Netlify', 'Claude Code', 'Linux', 'Wireshark', 'Nmap', 'Splunk', 'Burp Suite', 'Metasploit'],
+  toolkit: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'React Native', 'Vite', 'jQuery', 'Bootstrap', 'Tailwind CSS', 'PHP', 'Laravel', 'MySQL', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'XAMPP', 'Chart.js', 'GSAP', 'Git', 'GitHub', 'Postman', 'Figma', 'Netlify', 'Claude Code', 'Linux', 'Wireshark', 'Nmap', 'Splunk', 'Burp Suite', 'Metasploit'],
 
   /* ---------- Projects ----------
      layout: 'desktop' = browser-style gallery, 'app' = three phone/app windows.
@@ -90,6 +90,27 @@ window.PORTFOLIO = {
         { src: 'assets/img/tw_teacher.webp', label: 'Teacher dashboard' },
         { src: 'assets/img/tw_admin.webp', label: 'Admin dashboard' },
         { src: 'assets/img/tw_mobile.webp', label: 'Professor Wise on a phone', tall: true }
+      ]
+    },
+    {
+      name: 'Dokyu', kind: 'Android + web app · government papers guide', layout: 'app',
+      facts: [['79', 'automated tests'], ['8', 'document guides'], ['2', 'languages · EN / TL'], ['1', 'codebase · Android + web']],
+      desc: 'A friendly guide to Philippine government papers, led by Doki, a living-document mascot. It tells people exactly what to bring, what it costs and where to go for NBI and police clearances, PSA birth certificates, the National ID, passports and more, so they do the online part at home and visit the office only once.',
+      features: [
+        'Each guide shows the fee, processing time, what to bring and step-by-step instructions, with links only to official sites',
+        'Office Finder with a map, open-now status, Philippine holidays and one-tap directions',
+        'My Docs tracks papers for you and your family, with reminders, and syncs across phones and browsers',
+        'Ask Doki answers in English or Tagalog, and a short guided tour welcomes first-time users'
+      ],
+      tags: ['React Native', 'Expo', 'TypeScript', 'Node.js', 'PostgreSQL'],
+      github: 'https://github.com/mukraminbariwa5-create/Dokyu',
+      live: 'https://dokyu.onrender.com', liveNote: 'Use it as a guest, or tap “Try the demo account” on the sign-in screen. Free hosting: the first visit can take about a minute to wake up.',
+      preview: 'assets/video/dokyu.mp4', previewShot: 0,
+      learned: 'Syncing My Docs between phones taught me to merge offline edits safely: every change carries a time, deletions are remembered, and the server only accepts a save if nobody else saved first. Opening a public demo account to strangers taught me to plan for misuse, not just features.',
+      shots: [
+        { src: 'assets/img/dk_tour.webp', label: 'Doki’s guided tour' },
+        { src: 'assets/img/dk_guide.webp', label: 'Guide · NBI Clearance' },
+        { src: 'assets/img/dk_docs.webp', label: 'My Docs' }
       ]
     },
     {
@@ -215,12 +236,12 @@ window.PORTFOLIO = {
 
   /* ---------- Why work with me: each point links to its proof ---------- */
   why: [
-    { title: 'I ship complete systems', text: 'Five projects covering the full stack: the database, the API, the admin dashboards and the screens people use. TeachWise alone has 5 user roles, 72 API tests and runs on Android and the web.', link: '#projects', linkText: 'See the projects' },
+    { title: 'I ship complete systems', text: 'Six projects covering the full stack: the database, the API, the admin dashboards and the screens people use. TeachWise alone has 5 user roles, 72 API tests and runs on Android and the web.', link: '#projects', linkText: 'See the projects' },
     { title: 'Security is built in, not added later', text: 'A networking major and three security certificates shape how I code: school-by-school data separation in TeachWise, role checks in every system and on-device encryption in Padala.', link: '#certifications', linkText: 'See the certificates' },
-    { title: 'I build with AI and own the result', text: 'I use AI coding tools like Claude Code to move fast, but I plan each system, review and test every change, and can explain how it works. 116 automated tests across TeachWise and Padala back that up.', link: 'https://github.com/mukraminbariwa5-create', linkText: 'See my GitHub' }
+    { title: 'I build with AI and own the result', text: 'I use AI coding tools like Claude Code to move fast, but I plan each system, review and test every change, and can explain how it works. 195 automated tests across TeachWise, Dokyu and Padala back that up.', link: 'https://github.com/mukraminbariwa5-create', linkText: 'See my GitHub' }
   ],
   journey: [
-    { when: 'Now', kind: 'Projects', title: 'Building projects with AI-driven development', org: 'Personal projects · ongoing', text: 'Five projects so far: TeachWise, KATRIBO and BookTrack are complete, and Servease and Padala are in development, each one planned, built with Claude Code, tested and published on GitHub.', live: true },
+    { when: 'Now', kind: 'Projects', title: 'Building projects with AI-driven development', org: 'Personal projects · ongoing', text: 'Six projects so far: TeachWise, Dokyu, KATRIBO and BookTrack are complete, and Servease and Padala are in development, each one planned, built with Claude Code, tested and published on GitHub.', live: true },
     { when: 'Feb – May 2026', kind: 'OJT', title: 'On-the-Job Trainee', org: 'Department of Information and Communications Technology (DICT) · Jolo, Sulu', text: 'Hands-on work across deployment, networking and development:',
       bullets: [
         'Facilitated the rollout of a DICT free internet connectivity program to partner schools, coordinating on-site deployment and orienting students and staff',

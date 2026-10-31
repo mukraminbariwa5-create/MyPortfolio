@@ -245,7 +245,7 @@
     if (p.layout === 'app') {
       var pShot = Math.min(p.previewShot == null ? 1 : p.previewShot, p.shots.length - 1);
       media = '<div class="apps">' + p.shots.map(function (s, j) {
-        return '<figure class="app" data-reveal-item><div class="cut"><div class="cut__in"><button type="button" class="app__open" data-app-shot="' + j + '" aria-label="Enlarge ' + esc(s.label) + ' screenshot"><img src="' + esc(s.src) + '" alt="' + esc(p.name + ' — ' + s.label) + '" loading="lazy"></button>' + (j === pShot ? previewHtml(p) : '') + '</div></div><span>' + esc(s.label) + '</span></figure>';
+        return '<figure class="app"><div class="cut"><div class="cut__in"><button type="button" class="app__open" data-app-shot="' + j + '" aria-label="Enlarge ' + esc(s.label) + ' screenshot"><img src="' + esc(s.src) + '" alt="' + esc(p.name + ' — ' + s.label) + '" loading="lazy"></button>' + (j === pShot ? previewHtml(p) : '') + '</div></div><span>' + esc(s.label) + '</span></figure>';
       }).join('') + '</div>';
     } else {
       media = '<div class="frame cut" data-frame><div class="cut__in">' +
@@ -1020,6 +1020,8 @@
     tl.from(body.children, { opacity: 0, x: i % 2 ? -30 : 30, duration: 0.9, ease: 'power3.out', stagger: 0.07 }, 0.25)
       .add(function () { var h = $('[data-scramble-view]', p); if (h) scramble(h, h.textContent, 0.8); }, 0.35);
   });
+  // Phone screenshots have their own entrance here (not data-reveal-item: two "from" tweens on the
+  // same element would leave it at opacity 0).
   $$('.apps').forEach(function (a) {
     gsap.from($$('.app', a), { opacity: 0, y: 80, rotate: function (k) { return [-4, 0, 4][k] || 0; }, duration: 1.2, ease: 'expo.out', stagger: 0.12, scrollTrigger: { trigger: a, start: 'top 80%' } });
     gsap.to($$('.app', a), { y: function (k) { return [-24, 18, -12][k] || 0; }, ease: 'none', scrollTrigger: { trigger: a, start: 'top bottom', end: 'bottom top', scrub: true } });
